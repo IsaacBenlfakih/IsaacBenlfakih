@@ -1,22 +1,27 @@
 # SQLite. Versions 3.8.0 and up are supported.
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV.fetch("DATABASE_USERNAME") { 'postgres' } %>
-  password: <%= ENV.fetch("DATABASE_PASSWORD") { '' } %>
-  host: <%= ENV.fetch("DATABASE_HOST") { 'localhost' } %>
-
 development:
-  <<: *default
-  database: my_app_development
+  adapter: postgresql
+  encoding: utf8
+  database: project_development
+  pool: 5
+  username:
+  password:
 
-test:
-  <<: *default
-  database: my_app_test
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: project_test
+  pool: 5
+  username:
+  password:
 
 production:
-  <<: *default
-  database: my_app_production
-  username: <%= ENV['MY_APP_DATABASE_USER'] %>
-  password: <%= ENV['MY_APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: utf8
+  database: project_production
+  pool: 5
+  username:
+  password:
+
+cucumber:
+  <<: *TEST
