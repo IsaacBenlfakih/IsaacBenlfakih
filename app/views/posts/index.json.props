@@ -1,0 +1,15 @@
+json.posts do
+  json.array! @posts do |post|
+    json.id post.id
+    json.body post.body
+    json.createdAt post.created_at
+    json.updatedAt post.updated_at
+    json.editPostPath edit_post_path(post)
+    json.postPath post_path(post)
+    json.deleteForm do
+      form_props(model: post, method: :delete)
+    end
+  end
+end
+
+json.newPostPath new_post_path

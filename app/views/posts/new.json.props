@@ -1,0 +1,10 @@
+if @post.errors.any?
+  flash.now["postFormErrors"] = @post.errors.as_json
+end
+
+json.postForm(partial: 'form') do
+end
+
+json.postsPath posts_path
+
+
