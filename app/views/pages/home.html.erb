@@ -1,0 +1,80 @@
+<% content_for :title, "Isaac Benlfakih | Full Stack Developer" %>
+
+<main class="portfolio-shell">
+	<nav class="site-nav" aria-label="Primary navigation">
+		<a class="brand" href="#top" aria-label="Isaac Benlfakih home">IB<span>.</span></a>
+		<div class="nav-links">
+			<a href="#about">About</a>
+			<a href="#work">Selected work</a>
+			<a href="#contact">Contact</a>
+		</div>
+		<a class="availability" href="#contact"><span></span> Available for work</a>
+	</nav>
+
+	<section class="hero" id="top" aria-labelledby="hero-title">
+		<div class="hero-copy">
+			<p class="eyebrow reveal">Full stack developer <span>/</span> Based in Casablanca</p>
+			<h1 id="hero-title" class="reveal reveal-delay-one">Development<br><em>made easy</em></h1>
+			<p class="hero-intro reveal reveal-delay-two">Logistical front-ends, sturdy systems, and a an eye for detail.</p>
+			<a class="arrow-link reveal reveal-delay-three" href="#work">See selected work <span aria-hidden="true">↘</span></a>
+		</div>
+		<div class="hero-art" aria-label="Portrait of Isaac Benlfakih" role="img">
+			<div class="art-window art-window-back"><%= image_tag "DSC07905.jpg", alt: "Isaac Benlfakih portrait" %><%= image_tag "DSC07996.jpg", alt: "Isaac Benlfakih portrait, alternate view" %><span>01</span></div>
+			<p class="art-caption">Curious by nature<br>precise by practice.</p>
+		</div>
+		<div class="scroll-note"><span class="scroll-line"></span> Scroll to explore</div>
+	</section>
+
+	<section class="about section-wrap" id="about" aria-labelledby="about-title">
+		<div class="section-label"><span>01</span> About me</div>
+		<div class="about-content">
+			<h2 id="about-title">Code that<br><span>actually works.</span></h2>
+			<div class="about-body">
+				<p class="lead">I’m Isaac, a full stack developer who cares deeply about meeting development expectations and delivering quality results.</p>
+				<p>I work across the stack to turn complex ideas into clear, useful user experiences. As a professor, there is no better way to learn than by doing.</p>
+				<a class="text-link" href="#contact">More about me <span aria-hidden="true">↗</span></a>
+			</div>
+		</div>
+		<div class="skills-row" aria-label="Technologies and skills">
+			<span>Ruby on Rails</span><span>React</span><span>React Native</span><span>JavaScript</span><span>Python</span><span>Stimulus</span><span>Next.js</span><span>Tailwind</span><span>Bootstrap</span><span>Figma</span><span>Photoshop</span><span>SASS</span><span>Flutter</span><span>MongoDB</span><span>NMN</span><span>Cybersecurity</span><span>PEN Testing</span><span>PostgreSQL</span><span>UI / UX</span><span>Product thinking</span>
+		</div>
+	</section>
+
+	<section class="work section-wrap" id="work" aria-labelledby="work-title">
+		<div class="section-heading">
+			<div class="section-label"><span>02</span> Selected work</div>
+			<h2 id="work-title">A few things<br><span>I’ve made.</span></h2>
+		</div>
+		<div class="project-grid">
+			<a class="project project-large" href="https://affordablemotorsnc.com" target="_blank">
+				<div class="project-image image-one"><%= image_tag "Affordable-motors.png", alt: "Affordable Motors website preview" %><%= image_tag "Affordable-Motors2.png", alt: "Affordable Motors website preview, alternate view" %><span class="image-tag">01 / 03</span></div>
+				<div class="project-meta"><div><h3>Affordable Motors</h3><p>Automotive dealership website</p></div><span class="project-arrow">↗</span></div>
+			</a>
+			<a class="project project-offset" href="https://bookanyboat.com/" target="_blank">
+				<div class="project-image image-two"><%= image_tag "BookAnyBoat.png", alt: "BookAnyBoat website preview" %><%= image_tag "BookAnyBoat2.png", alt: "BookAnyBoat website preview, alternate view" %><span class="image-tag">02 / 03</span></div>
+				<div class="project-meta"><div><h3>BookAnyBoat</h3><p>Boat rental marketplace</p></div><span class="project-arrow">↗</span></div>
+			</a>
+			<a class="project project-wide" href="https://mamaginnas.com/" target="_blank">
+				<div class="project-image image-three"><%= image_tag "MamaGinnas.png", alt: "Mama Ginna's website preview" %><%= image_tag "MamaGinnas2.png", alt: "Mama Ginna's website preview, alternate view" %><span class="image-tag">03 / 03</span></div>
+				<div class="project-meta"><div><h3>Mama Ginna’s</h3><p>Italian pizzeria website</p></div><span class="project-arrow">↗</span></div>
+			</a>
+		</div>
+	</section>
+
+	<section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
+		<div class="section-label"><span>03</span> Get in touch</div>
+		<div class="contact-content">
+			<h2 id="contact-title">Have a good<br><em>idea?</em></h2>
+			<div>
+				<p>I’m always interested in hearing about new projects, collaborations, and thoughtful problems to solve.</p>
+				<a class="contact-email" href="mailto:isaacbenlfakih@gmail.com">isaacbenlfakih@gmail.com <span aria-hidden="true">↗</span></a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<span>© <%= Time.current.year %> Isaac Benlfakih</span>
+		<div><a href="https://github.com/IsaacBenlfakih" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/isaac-benlfakih/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+		<a href="#top">Back to top ↑</a>
+	</footer>
+</main>
